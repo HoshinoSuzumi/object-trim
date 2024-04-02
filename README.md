@@ -21,7 +21,7 @@ npm i @uniiem/object-trim
 import { trimObject } from '@uniiem/object-trim'
 
 // A object list, e.g. LLM chatbot history
-const case_obj_list = [
+const case_obj_list: CaseObject[] = [
   {
     id: 'fb3dd9ed-52bf-4aff-b4be-2ac9ddc95319',
     role: 'user',
@@ -45,6 +45,9 @@ const case_obj_list = [
 ]
 
 // Trim the object list by the key 'content' and max length 50
+// 
+// object types can be automatically derived or specified by generics
+// - trimObject<CaseObject>(case_obj_list, 50, { keys: ['content'] })
 const trimmed_obj_list = trimObject(case_obj_list, 50, { keys: ['content'] })
 console.log(trimmed_obj_list)
 
