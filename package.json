@@ -26,12 +26,16 @@
   ],
   "scripts": {
     "build": "vite build && tsc",
+    "commit": "git add . && commit",
     "release": "bumpp && npm publish",
     "test": "vitest",
     "bench": "vitest bench",
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/prompt-cli": "^19.2.0",
     "@uniiem/uuid": "^0.2.1",
     "bumpp": "^9.4.0",
     "typescript": "^5.2.2",
