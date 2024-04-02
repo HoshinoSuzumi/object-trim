@@ -245,6 +245,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.5.tgz#a6ce3e556e00fd9895dd872dd172ad0d4bd687f4"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
 
+"@uniiem/uuid@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@uniiem/uuid/-/uuid-0.2.1.tgz#2ffa44624968cda47ef744770b2b58f5e5e558f8"
+  integrity sha512-p8DOA3BTkZgvgtOCtK5x7Y2l+GRTFhYrOua70YPiEEUomQFirwxpWrQBst+7oB/iPTeY1zHuF6MKl+mxi0R00A==
+
 "@vitest/expect@1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@vitest/expect/-/expect-1.4.0.tgz#d64e17838a20007fecd252397f9b96a1ca81bfb0"

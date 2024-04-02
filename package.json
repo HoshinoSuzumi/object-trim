@@ -1,9 +1,13 @@
 {
-  "name": "@uniiem/typescript-lib-template",
+  "name": "@uniiem/object-trim",
   "type": "module",
   "version": "0.0.0",
-  "description": "TypeScript Library Template",
-  "keywords": [],
+  "description": "Calculate and trim object size by specifying properties",
+  "keywords": [
+    "object",
+    "trim",
+    "size"
+  ],
   "author": "HoshinoSuzumi <master@uniiem.com>",
   "license": "MIT",
   "packageManager": "yarn@1.22.22",
@@ -23,9 +27,12 @@
   "scripts": {
     "build": "vite build && tsc",
     "release": "bumpp && npm publish",
-    "test": "vitest"
+    "test": "vitest",
+    "bench": "vitest bench",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@uniiem/uuid": "^0.2.1",
     "bumpp": "^9.4.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
