@@ -8,7 +8,7 @@
 
 Calculate and trim object size by specifying properties
 
-It can be used for the context length limit of LLM Chatbot callings.
+It can be used for the context length limit of LLM Chatbot histories.
 
 ## Usage
 
