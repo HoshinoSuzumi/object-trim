@@ -70,9 +70,10 @@ console.log(trimmed_obj_list)
 ### trimObject(objectList, maxLength, TrimObjectProperties[])
 
 ```typescript
-const trimObject: <T>(objectList: T[], maxLength: number, { keys }: TrimObjectProperties<T>) => T[];
+const trimObject: <T>(objectList: T[], maxLength: number, props: TrimObjectProperties<T>) => T[];
 
 interface TrimObjectProperties<T> {
     keys: (keyof T)[];
+    fromStart?: boolean;  // default: false
 }
 ```

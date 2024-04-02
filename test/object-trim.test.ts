@@ -48,4 +48,16 @@ describe('trim objecet', () => {
     expect(result.map(item => item.case)).toEqual(case_list.map(item => item.case))
   })
 
+  it('by "content" length 25 from start', () => {
+    const result = trimObject(case_list, 25, { keys: ['content'], fromStart: true })
+    expect(result).toHaveLength(1)
+    expect(result[0].case).toBe(1)
+  })
+
+  it('by "content" length 45 from start', () => {
+    const result = trimObject(case_list, 45, { keys: ['content'], fromStart: true })
+    expect(result).toHaveLength(2)
+    expect(result.map(item => item.case)).toEqual([1, 2])
+  })
+
 })
