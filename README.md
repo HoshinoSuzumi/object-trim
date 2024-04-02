@@ -46,7 +46,7 @@ const case_obj_list: CaseObject[] = [
 
 // Trim the object list by the key 'content' and max length 50
 // 
-// object types can be automatically derived or specified by generics
+// object types can be auto inference or specified by generics
 // - trimObject<CaseObject>(case_obj_list, 50, { keys: ['content'] })
 const trimmed_obj_list = trimObject(case_obj_list, 50, { keys: ['content'] })
 console.log(trimmed_obj_list)
